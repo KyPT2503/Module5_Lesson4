@@ -1,0 +1,13 @@
+<h1>For articles</h1>
+<div class="" *ngFor="let art of artis">
+  <hr>
+  <a [href]="art.url">{{art.title}}</a>
+</div>
+<hr>
+<label>Name:
+  <input type="text" [(ngModel)]="nameNewArticle" class="form-control">
+</label><br>
+<label>Url
+  <input type="text" [(ngModel)]="urlNewArticle" class="form-control">
+</label><br><br>
+<button class="btn btn-danger" (click)="newArticle()">Save</button>
